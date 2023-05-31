@@ -14,3 +14,12 @@ score1.textContent = 0;
 diceImage.classList.add("hidden")
 
 // Rolling the dice
+rollDiceBtn.addEventListener("click", function() {
+  // Generating a random dice roll 
+  const dice = Math.trunc(Math.random() * 6)
+
+  // Display the dice
+
+
+  // Check if someone has rolled a one
+})
