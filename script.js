@@ -14,12 +14,15 @@ const newGameBtn = document.querySelector(".btn--new");
 const holdDiceBtn = document.querySelector(".btn--hold");
 const rollDiceBtn = document.querySelector(".btn--roll");
 
+// Declaring these globally
+let scores, currentScore, activePlayer, playing;
+
 // Starting conditions
 const init = function () {
-  const scores = [0, 0];
-  let currentScore = 0;
-  let activePlayer = 0;
-  let playing = true;
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
 
   score0.textContent = 0;
   score1.textContent = 0;
@@ -75,7 +78,7 @@ holdDiceBtn.addEventListener("click", function () {
       scores[activePlayer];
 
     // Check if score is >= 100, then player wins
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       // Finish the game
       playing = false;
       diceImage.classList.add("hidden");
@@ -92,13 +95,5 @@ holdDiceBtn.addEventListener("click", function () {
   }
 });
 
-newGameBtn.addEventListener("click", function () {
-  score0.textContent = 0;
-  score1.textContent = 0;
-  current0.textContent = 0;
-  current1.textContent = 0;
-  player0.classList.remove("player--winner");
-  player1.classList.remove("player--winner");
-  player0.classList.add("player--active");
-  player1.classList.remove("player--active");
-});
+// Game reset using the new game button
+newGameBtn.addEventListener("click", init);
