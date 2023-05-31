@@ -56,7 +56,7 @@ holdDiceBtn.addEventListener("click", function () {
   // Add current score to active players score
   scores[activePlayer] += currentScore;
   // Check if score is >= 100, then player wins
-  document.getElementById(`current--${activePlayer}`).textContent =
+  document.getElementById(`score--${activePlayer}`).textContent =
     scores[activePlayer];
   // If not then switch to the next player
   switchPlayer();
