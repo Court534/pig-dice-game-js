@@ -21,6 +21,12 @@ rollDiceBtn.addEventListener("click", function () {
   // Display the dice
   diceImage.classList.remove("hidden")
   diceImage.src = `images/dice-${dice}.png`
-  // Check if someone has rolled a one
 
+  // Check if someone has rolled a one
+  if (dice !== 1) {
+    // Add dice to current score
+    document.querySelector()
+  } else {
+    // Reset score
+  }
 });
