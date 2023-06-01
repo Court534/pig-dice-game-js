@@ -18,7 +18,7 @@ A classic dice game called Pig implemented in JavaScript, HTML, CSS. Two players
 
 ![winnerss](https://github.com/Court534/pig-dice-game-js/assets/85391216/72e9a1ea-eb39-4cdc-8502-7c95fd209096)
 
-Feel free to explore and enjoy the game ![here]("https://cs-pig-dice-game.netlify.app")!
+Feel free to explore and enjoy the game ![here](https://cs-pig-dice-game.netlify.app/)!
 
 ## Deployment
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f6a9f05c-df4f-4c8f-9894-195cd96e4358/deploy-status)](https://app.netlify.com/sites/cs-pig-dice-game/deploys)
